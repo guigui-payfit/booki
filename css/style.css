@@ -4,12 +4,28 @@
 @import "layout.css";
 @import "variables.css";
 
-/****** Hebergements ***********/
-.hebergements {
+/* Header */
+header img {
+  height: 7.9rem;
+  padding: 3rem 5rem;
+}
+
+header nav {
+  height: 3.5rem;
+  padding: 0 5rem;
+  width: 34.4rem;
+}
+
+header nav a {
+  display: flex;
+}
+
+/* Hebergements */
+#hebergements {
   width: 65%;
 }
 
-/****** Populaires ***********/
+/* Populaires */
 .populaires {
   width: 32%;
 }
@@ -43,11 +59,25 @@
   margin-bottom: 0.5rem;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
+/* Styles on medium (tablets) and large devices (computers) */
+@media (min-width: 769px) {
+  header nav a {
+    align-items: flex-end;
+  }
 
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+  header nav a:hover {
+    border-top: 0.2rem solid var(--primary);
+    color: var(--primary);
+  }
+}
+
+/* Styles on small (phones) and medium (tablets) devices */
 @media (max-width: 1024px) {
+  header nav a:hover {
+    border-bottom: 0.2rem solid var(--primary);
+    color: var(--primary);
+  }
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -80,7 +110,7 @@
   }
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-  /* ... */
+/* Styles on small devices (phones) */
+@media (max-width: 768px) {
+  /**/
 }
