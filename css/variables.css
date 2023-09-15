@@ -1,0 +1,16 @@
+html {
+  /* Border radius */
+  --border-radius: 2rem;
+
+  /* Colors */
+  --background: #f2f2f2;
+  --primary: #0065fc;
+  --secondary: #deebff;
+
+  /* Fonts */
+  --font-family: "Raleway", sans-serif;
+
+  /* Limit width */
+  --max-width: 144rem;
+  --min-width: 32rem;
+}

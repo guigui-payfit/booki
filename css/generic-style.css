@@ -1,0 +1,24 @@
+.card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  filter: drop-shadow(0 0.3rem 1.5rem rgba(0, 0, 0, 0.1));
+  padding: 0.5rem;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.euro {
+  font-weight: 700;
+}
+
+.main-container {
+  max-width: var(--max-width);
+  padding: 0 5rem;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2.2rem;
+}
