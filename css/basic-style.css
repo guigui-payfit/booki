@@ -12,6 +12,7 @@ a {
 
 body {
   font-size: 1.6rem;
+  line-height: 1.9rem;
   margin: auto;
   max-width: var(--max-width);
   padding: 0 5rem;
@@ -24,9 +25,11 @@ button {
 
 h2 {
   font-size: 2.2rem;
+  line-height: 2.6rem;
 }
 
 header {
+  height: 7.9rem;
   margin-bottom: 3rem;
 }
 

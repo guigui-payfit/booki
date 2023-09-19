@@ -6,7 +6,7 @@
 
 /* Header */
 header img {
-  height: 7.9rem;
+  height: 100%;
   padding: 3rem 0;
 }
 
@@ -27,16 +27,17 @@ header nav a {
   border-top-left-radius: var(--border-radius);
 }
 
+#location-dot,
 #location-dot > i {
   width: 5rem;
 }
 
-#search-accomodation-form h2 {
-  margin-bottom: 0.8rem;
+#search-accomodation-form > * {
+  margin-bottom: 3.5rem;
 }
 
-#search-accomodation-form p {
-  margin-bottom: 3.5rem;
+#search-accomodation-form h2 {
+  margin-bottom: 0.8rem;
 }
 
 #search-bar {
@@ -47,11 +48,13 @@ header nav a {
 #search-bar > * {
   font-size: 1.8rem;
   font-weight: 700;
+  line-height: 2.1rem;
 }
 
 #search-bar > input {
   border: 0.1rem solid var(--background);
   padding: 1.2rem 0 1.2rem 2.4rem;
+  width: 19.5rem;
 }
 
 #search-button {
@@ -61,6 +64,7 @@ header nav a {
   border-top-right-radius: var(--border-radius);
   color: white;
   padding: 1.5rem 1.6rem;
+  width: 13.2rem;
 }
 
 /* Accomodation and famous accomodation sections */
