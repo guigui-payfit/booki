@@ -121,6 +121,7 @@ header nav a {
 #famous {
   background-color: var(--section-background);
   border-radius: var(--default-border-radius);
+  margin-bottom: 3.5rem;
 }
 
 /* Accomodations */
@@ -141,6 +142,7 @@ header nav a {
 }
 
 #accomodation-cards > a {
+  display: block;
   margin: 0 3rem 3rem 0;
   min-width: 29.76%;
 }
@@ -197,6 +199,33 @@ header nav a {
   justify-content: space-between;
   padding: 1.5rem 0.5rem 1rem 1.5rem;
   width: 67%;
+}
+
+/* Activities */
+#activities {
+  padding: 3rem 0 3rem 3rem;
+}
+
+#activities > a {
+  display: block;
+  margin-right: 3rem;
+  width: 25%;
+}
+
+#activities > h2 {
+  margin-bottom: 3rem;
+}
+
+#activities h3 {
+  padding: 2rem 1.9rem;
+}
+
+#activities img {
+  border-top-left-radius: var(--card-border-radius);
+  border-top-right-radius: var(--card-border-radius);
+  height: 38rem;
+  padding: 0;
+  width: 100%;
 }
 
 /* Styles on medium (tablets) and large devices (computers) */
