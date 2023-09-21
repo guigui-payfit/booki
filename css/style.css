@@ -118,7 +118,7 @@ header nav a {
 
 /* Accomodation and famous accomodation sections */
 #accomodations,
-.famous {
+#famous {
   background-color: var(--section-background);
   border-radius: var(--default-border-radius);
 }
@@ -170,30 +170,33 @@ header nav a {
 }
 
 /* Famous accomodations */
-.famous {
+#famous {
   padding: 3rem;
   width: 32%;
 }
 
-.famous-cards img {
+#famous-cards h3 {
+  margin-bottom: 0.5rem;
+}
+
+#famous-cards img {
   border-bottom-left-radius: var(--card-border-radius);
   border-top-left-radius: var(--card-border-radius);
   height: 13.6rem;
   width: 33%;
 }
 
-.famous-cards .card {
+#famous-cards .card {
   display: flex;
-  margin-top: 3.3rem;
+  margin-top: 3rem;
 }
 
-.famous-cards .card-content {
-  padding-left: 1.5rem;
+#famous-cards .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 0.5rem 1rem 1.5rem;
   width: 67%;
-}
-
-.famous-cards .card-rating {
-  margin-bottom: 0.5rem;
 }
 
 /* Styles on medium (tablets) and large devices (computers) */
