@@ -72,8 +72,8 @@ header nav a {
 #location-dot {
   background-color: var(--section-background);
   border: 0.1rem solid var(--section-background);
-  border-bottom-left-radius: var(--border-radius);
-  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--default-border-radius);
+  border-top-left-radius: var(--default-border-radius);
 }
 
 #location-dot,
@@ -109,8 +109,8 @@ header nav a {
 #search-button {
   background-color: var(--primary);
   border: 0.1rem solid var(--primary);
-  border-bottom-right-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--default-border-radius);
+  border-top-right-radius: var(--default-border-radius);
   color: white;
   padding: 1.5rem 1.6rem;
   width: 13.2rem;
@@ -120,13 +120,17 @@ header nav a {
 #accomodations,
 .famous {
   background-color: var(--section-background);
-  border-radius: var(--border-radius);
+  border-radius: var(--default-border-radius);
   padding: 3rem;
 }
 
 /* Accomodations */
 #accomodations {
   width: 65%;
+}
+
+#accomodations > * {
+  margin-bottom: 3rem;
 }
 
 /* Famous accomodations */
@@ -140,8 +144,8 @@ header nav a {
 }
 
 .famous-cards img {
-  border-bottom-left-radius: var(--border-radius);
-  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--card-border-radius);
+  border-top-left-radius: var(--card-border-radius);
   height: 13.6rem;
   width: 33%;
 }

@@ -1,6 +1,7 @@
 html {
   /* Border radius */
-  --border-radius: 1.5rem;
+  --card-border-radius: 2rem;
+  --default-border-radius: 1.5rem;
 
   /* Colors */
   --primary: #0065fc;
