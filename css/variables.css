@@ -15,4 +15,7 @@ html {
   /* Limit width */
   --max-width: 144rem;
   --min-width: 32rem;
+
+  /* Transitions */
+  --transition: all 0.3s;
 }
