@@ -204,17 +204,18 @@ header nav a {
 
 /* Activities */
 #activities {
+  margin-bottom: 3.5rem;
   padding: 3rem 0 3rem 3rem;
-}
-
-#activities > a {
-  display: block;
-  margin-right: 3rem;
-  width: 25%;
 }
 
 #activities > h2 {
   margin-bottom: 3rem;
+}
+
+#activities a {
+  display: block;
+  margin-right: 3rem;
+  width: 25%;
 }
 
 #activities h3 {
