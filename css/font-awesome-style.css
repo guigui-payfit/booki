@@ -3,6 +3,10 @@
   color: var(--primary);
 }
 
+.fa-location-dot {
+  font-size: 1.8rem;
+}
+
 .neutral-star {
   color: var(--section-background);
 }
