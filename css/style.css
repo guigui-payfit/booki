@@ -17,7 +17,7 @@ header li a {
 }
 
 /* Form to search an accomodation */
-.filter {
+.filter-button {
   align-items: center;
   background-color: white;
   border: 2px solid var(--secondary-button-border);
@@ -31,11 +31,11 @@ header li a {
   transition: var(--transition);
 }
 
-.filter:hover {
+.filter-button:hover {
   background-color: var(--secondary);
 }
 
-.filter > i {
+.filter-button > i {
   color: var(--primary);
   display: flex;
   font-size: 2.2rem;
@@ -44,7 +44,16 @@ header li a {
   width: 2.2rem;
 }
 
-#filters > * {
+#filter-buttons > * {
+  margin-right: 1.5rem;
+}
+
+#filters {
+  align-items: center;
+  display: flex;
+}
+
+#filters > p {
   margin-right: 1.5rem;
 }
 
@@ -104,16 +113,21 @@ header li a {
 
 /* Accomodation and famous accomodation sections */
 #accomodations,
-#famous {
+#famous-accomodations {
   background-color: var(--section-background);
   border-radius: var(--default-border-radius);
   margin-bottom: 3.5rem;
+  padding: 3rem;
+}
+
+#accomodations-and-famous-accomodations {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Accomodations */
 #accomodations {
   margin-right: 4rem;
-  padding: 3rem 0 3rem 3rem;
   width: 65%;
 }
 
@@ -121,10 +135,17 @@ header li a {
   margin-bottom: 3rem;
 }
 
+.accomodation-card-row {
+  margin-bottom: 3rem;
+}
+
 .accomodation-card-row > a {
   display: block;
-  margin: 0 3rem 3rem 0;
-  width: 33.33%;
+  flex: 1;
+}
+
+.accomodation-card-row > a:not(:last-child) {
+  margin-right: 3rem;
 }
 
 .accomodation-card-row h3 {
@@ -153,28 +174,27 @@ header li a {
 }
 
 /* Famous accomodations */
-#famous {
-  padding: 3rem;
+#famous-accomodations {
   width: 32%;
 }
 
-#famous-cards h3 {
+#famous-accomodation-cards h3 {
   margin-bottom: 0.5rem;
 }
 
-#famous-cards img {
+#famous-accomodation-cards img {
   border-bottom-left-radius: var(--card-border-radius);
   border-top-left-radius: var(--card-border-radius);
-  height: 13.6rem;
+  height: 14.6rem;
   width: 33%;
 }
 
-#famous-cards .card {
+#famous-accomodation-cards .card {
   display: flex;
   margin-top: 3rem;
 }
 
-#famous-cards .card-content {
+#famous-accomodation-cards .card-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -184,7 +204,7 @@ header li a {
 
 /* Activities */
 #activities {
-  padding: 3rem 0 3rem 3rem;
+  padding: 3rem;
 }
 
 #activities > h2 {
@@ -193,8 +213,11 @@ header li a {
 
 #activities a {
   display: block;
+  flex: 1;
+}
+
+#activities a:not(:last-child) {
   margin-right: 3rem;
-  width: 25%;
 }
 
 #activities h3 {
@@ -227,7 +250,8 @@ footer > section p {
 }
 
 /* Styles on medium (tablets) and large devices (computers) */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+  /* Header */
   header nav a {
     align-items: flex-end;
   }
@@ -238,6 +262,7 @@ footer > section p {
     transition: var(--transition);
   }
 
+  /* Form to search an accomodation */
   #search-button > i {
     display: none;
   }
@@ -245,46 +270,66 @@ footer > section p {
 
 /* Styles on small (phones) and medium (tablets) devices */
 @media (max-width: 1024px) {
+  /* Form to search an accomodation */
+  #filters {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #filters > p {
+    margin-bottom: 2rem;
+  }
+
+  .filter-button {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+  /* Accomodation and famous accomodation sections */
+  #accomodations,
+  #famous-accomodations {
+    width: 100%;
+  }
+
+  #accomodations-and-famous-accomodations {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* Accomodations */
+  #accomodations {
+    margin-bottom: 5rem;
+    margin-right: 0;
+  }
+
+  /* Famous accomodations */
+  #famous-accomodation-cards {
+    display: flex;
+  }
+
+  #famous-accomodation-cards > * {
+    flex: 1;
+  }
+
+  #famous-accomodation-cards > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  /* Activities */
+  #activities img {
+    height: 20rem;
+  }
+}
+
+/* Styles on small devices (phones) */
+@media (max-width: 767.99px) {
+  /* Header */
   header nav a:hover {
     border-bottom: 0.2rem solid var(--primary);
     color: var(--primary);
     transition: var(--transition);
   }
 
-  .accomodations-and-famous {
-    flex-direction: column;
-  }
-
-  .accomodations {
-    width: 100%;
-  }
-
-  .famous {
-    margin-top: 5rem;
-    width: 100%;
-  }
-
-  .famous-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .famous-cards a {
-    width: 30%;
-  }
-
-  .famous-cards .card-title {
-    font-size: 1.4rem;
-  }
-
-  .famous-cards .card-subtitle {
-    font-size: 1.3rem;
-  }
-}
-
-/* Styles on small devices (phones) */
-@media (max-width: 767.99px) {
+  /* Form to search an accomodation */
   #search-button > span {
     display: none;
   }
