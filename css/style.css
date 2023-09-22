@@ -6,11 +6,11 @@
 
 /* Header */
 header img {
-  height: 100%;
+  height: 7.9rem;
   padding: 3rem 0;
 }
 
-header li a {
+header nav a {
   display: flex;
   height: 3.5rem;
   margin-left: 6.8rem;
@@ -60,9 +60,9 @@ header li a {
 #icon-circle {
   border: 1px solid var(--secondary-button-border);
   border-radius: 50%;
-  margin-right: 1rem;
   height: 2.4rem;
-  width: 2.4rem;
+  margin-right: 1rem;
+  min-width: 2.4rem;
 }
 
 #icon-circle > i {
@@ -82,7 +82,7 @@ header li a {
   width: 5rem;
 }
 
-#search-accomodation-form > * {
+#search-accomodation-form > *:not(:last-child) {
   margin-bottom: 3.5rem;
 }
 
@@ -91,23 +91,33 @@ header li a {
 }
 
 #search-bar {
-  height: 4.9rem;
-  width: 37.7rem;
+  border-bottom: 0.1rem solid var(--section-background);
+  border-top: 0.1rem solid var(--section-background);
+  border-radius: var(--default-border-radius);
+  height: 5.1rem;
+  max-width: 37.7rem;
+}
+
+#search-bar > * {
+  height: 100%;
 }
 
 #search-bar > input {
-  border: 0.1rem solid var(--section-background);
+  border: 0;
+  flex: 1;
   padding: 1.2rem 0 1.2rem 2.4rem;
   width: 19.5rem;
 }
 
 #search-button {
   background-color: var(--primary);
-  border: 0.1rem solid var(--primary);
+  border: 0;
   border-bottom-right-radius: var(--default-border-radius);
   border-top-right-radius: var(--default-border-radius);
   color: white;
   padding: 1.5rem 1.6rem;
+  outline: 0.2rem solid var(--primary);
+  outline-offset: -0.1rem;
   width: 13.2rem;
 }
 
@@ -116,7 +126,6 @@ header li a {
 #famous-accomodations {
   background-color: var(--section-background);
   border-radius: var(--default-border-radius);
-  margin-bottom: 3.5rem;
   padding: 3rem;
 }
 
@@ -136,15 +145,16 @@ header li a {
 }
 
 .accomodation-card-row {
+  display: flex;
   margin-bottom: 3rem;
 }
 
-.accomodation-card-row > a {
+.accomodation-card-row > * {
   display: block;
   flex: 1;
 }
 
-.accomodation-card-row > a:not(:last-child) {
+.accomodation-card-row > *:not(:last-child) {
   margin-right: 3rem;
 }
 
@@ -186,7 +196,7 @@ header li a {
   border-bottom-left-radius: var(--card-border-radius);
   border-top-left-radius: var(--card-border-radius);
   height: 14.6rem;
-  width: 33%;
+  width: 33.33%;
 }
 
 #famous-accomodation-cards .card {
@@ -199,24 +209,20 @@ header li a {
   flex-direction: column;
   justify-content: space-between;
   padding: 1.5rem 0.5rem 1rem 1.5rem;
-  width: 67%;
+  width: 66.67%;
 }
 
 /* Activities */
 #activities {
-  padding: 3rem;
+  display: flex;
 }
 
-#activities > h2 {
-  margin-bottom: 3rem;
-}
-
-#activities a {
+#activities > * {
   display: block;
   flex: 1;
 }
 
-#activities a:not(:last-child) {
+#activities > *:not(:last-child) {
   margin-right: 3rem;
 }
 
@@ -236,15 +242,23 @@ header li a {
   height: 100%;
 }
 
+#activity-container {
+  padding: 3rem;
+}
+
+#activity-container > h2 {
+  margin-bottom: 3rem;
+}
+
 /* Footer */
 footer > section {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: 2rem 2rem 0.5rem 2rem;
+  padding: 2rem;
 }
 
-footer > section li,
+footer > section li:not(:last-child),
 footer > section p {
   margin-bottom: 1.5rem;
 }
@@ -276,13 +290,10 @@ footer > section p {
     flex-direction: column;
   }
 
-  #filters > p {
-    margin-bottom: 2rem;
-  }
-
   .filter-button {
     font-size: 1.6rem;
     line-height: 1.9rem;
+    margin-top: 2rem;
   }
   /* Accomodation and famous accomodation sections */
   #accomodations,
@@ -292,7 +303,6 @@ footer > section p {
 
   #accomodations-and-famous-accomodations {
     flex-direction: column;
-    justify-content: space-between;
   }
 
   /* Accomodations */
@@ -314,6 +324,10 @@ footer > section p {
     margin-right: 2rem;
   }
 
+  #famous-accomodation-cards .card {
+    margin-top: 2rem;
+  }
+
   /* Activities */
   #activities img {
     height: 20rem;
@@ -323,6 +337,25 @@ footer > section p {
 /* Styles on small devices (phones) */
 @media (max-width: 767.99px) {
   /* Header */
+  header > a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  header li {
+    flex: 1;
+  }
+
+  header nav a {
+    border-bottom: 0.2rem solid var(--section-background);
+    display: flex;
+    height: 3.6rem;
+    justify-content: center;
+    margin-left: 0;
+    width: 100%;
+  }
+
   header nav a:hover {
     border-bottom: 0.2rem solid var(--primary);
     color: var(--primary);
@@ -330,7 +363,94 @@ footer > section p {
   }
 
   /* Form to search an accomodation */
+  .filter-button {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  #filter-buttons > * {
+    flex: 1;
+    margin-right: 1rem;
+  }
+
+  #search-accomodation-form {
+    padding: 0 2rem;
+  }
+
+  #search-button {
+    border-bottom-left-radius: var(--default-border-radius);
+    border-top-left-radius: var(--default-border-radius);
+    filter: drop-shadow(0 0.4rem 0.4rem rgba(0, 0, 0, 0.25));
+    width: 4.9rem;
+  }
+
   #search-button > span {
     display: none;
+  }
+
+  /* Accomodation and famous accomodation sections */
+  #accomodations-and-famous-accomodations {
+    flex-direction: column-reverse;
+  }
+
+  /* Famous accomodations */
+  #famous-accomodations {
+    margin-bottom: 1.5rem;
+    padding: 3rem 2rem;
+  }
+
+  #famous-accomodation-cards {
+    flex-direction: column;
+  }
+
+  #famous-accomodation-cards > *:not(:last-child) {
+    margin-right: 0;
+  }
+
+  #famous-accomodation-cards .card {
+    margin-top: 1.5rem;
+  }
+
+  /* Accomodations */
+  #accomodations {
+    background-color: white;
+    margin-bottom: 0;
+    padding: 2rem;
+  }
+
+  #accomodations > h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .accomodation-card-row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .accomodation-card-row > * {
+    margin-bottom: 1.5rem;
+  }
+
+  .accomodation-card-row > *:not(:last-child) {
+    margin-right: 0;
+  }
+
+  /* Activities */
+  #activities {
+    flex-direction: column;
+  }
+
+  #activities > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+    margin-right: 0rem;
+  }
+
+  #activities img {
+    height: 14.1rem;
+  }
+
+  /* Footer */
+  footer > section {
+    padding: 0;
   }
 }

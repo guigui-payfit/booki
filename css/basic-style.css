@@ -25,7 +25,7 @@ button {
 
 footer {
   background-color: var(--section-background);
-  margin-top: 3.5rem;
+  display: flex;
 }
 
 h2 {
@@ -38,7 +38,8 @@ h3 {
 }
 
 header {
-  height: 7.9rem;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 3rem;
 }
 
@@ -50,6 +51,30 @@ img {
   display: block;
 }
 
+main > * {
+  margin-bottom: 3.5rem;
+}
+
 ul {
   list-style: none;
+}
+
+/* Styles on small devices (phones) */
+@media (max-width: 767.99px) {
+  body {
+    padding: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 3rem;
+  }
+
+  footer > *:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  header {
+    flex-direction: column;
+  }
 }

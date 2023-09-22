@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="d-flex-column">
-    <header class="d-flex-row flex-justify-content-space-between">
+    <header>
       <a href="index.html"
         ><img src="images/logo/Booki.png" alt="Logo du site Booki"
       /></a>
@@ -54,7 +54,7 @@
         </div>
         <div id="filters">
           <p class="bigger-text">Filtres</p>
-          <div class="d-flex-row" id="filter-buttons">
+          <div class="d-flex-row-wrap" id="filter-buttons">
             <button class="filter-button">
               <i class="fa-solid fa-money-bill-wave"></i>
               Économique
@@ -86,7 +86,7 @@
       <div id="accomodations-and-famous-accomodations">
         <section id="accomodations">
           <h2>Hébergements à Marseille</h2>
-          <div class="accomodation-card-row d-flex-row">
+          <div class="accomodation-card-row">
             <a href="#">
               <article class="card">
                 <img
@@ -169,7 +169,7 @@
               </article>
             </a>
           </div>
-          <div class="accomodation-card-row d-flex-row">
+          <div class="accomodation-card-row">
             <a href="#">
               <article class="card">
                 <img
@@ -348,9 +348,9 @@
           </div>
         </aside>
       </div>
-      <section id="activities">
+      <section id="activity-container">
         <h2>Activités à Marseille</h2>
-        <div class="d-flex-row">
+        <div id="activities">
           <a href="#">
             <article class="card">
               <img
@@ -390,7 +390,7 @@
         </div>
       </section>
     </main>
-    <footer class="d-flex-row">
+    <footer>
       <section>
         <p class="bigger-text">À propos</p>
         <ul>
