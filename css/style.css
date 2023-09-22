@@ -211,6 +211,18 @@ header nav a {
   width: 100%;
 }
 
+/* Footer */
+footer > section {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 2rem 2rem 0.5rem 2rem;
+}
+
+footer > section > * {
+  margin-bottom: 1.5rem;
+}
+
 /* Styles on medium (tablets) and large devices (computers) */
 @media (min-width: 769px) {
   header nav a {

@@ -23,9 +23,18 @@ button {
   cursor: pointer;
 }
 
+footer {
+  background-color: var(--section-background);
+  margin-top: 3.5rem;
+}
+
 h2 {
   font-size: 2.2rem;
   line-height: 2.6rem;
+}
+
+h3 {
+  font-size: 1.6rem;
 }
 
 header {
