@@ -10,13 +10,10 @@ header img {
   padding: 3rem 0;
 }
 
-header nav {
-  height: 3.5rem;
-  width: 24.4rem;
-}
-
-header nav a {
+header li a {
   display: flex;
+  height: 3.5rem;
+  margin-left: 6.8rem;
 }
 
 /* Form to search an accomodation */
@@ -219,7 +216,8 @@ footer > section {
   padding: 2rem 2rem 0.5rem 2rem;
 }
 
-footer > section > * {
+footer > section li,
+footer > section p {
   margin-bottom: 1.5rem;
 }
 
