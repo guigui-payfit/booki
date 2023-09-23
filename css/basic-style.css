@@ -27,8 +27,14 @@ footer {
   background-color: var(--section-background);
 }
 
-footer > nav {
+footer nav {
   display: flex;
+}
+
+footer nav a:hover,
+header nav a:hover {
+  color: var(--primary);
+  transition: var(--transition);
 }
 
 h2 {

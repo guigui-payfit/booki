@@ -272,8 +272,6 @@ footer ul {
 
   header nav a:hover {
     border-top: 0.2rem solid var(--primary);
-    color: var(--primary);
-    transition: var(--transition);
   }
 
   /* Form to search an accomodation */
@@ -358,8 +356,6 @@ footer ul {
 
   header nav a:hover {
     border-bottom: 0.2rem solid var(--primary);
-    color: var(--primary);
-    transition: var(--transition);
   }
 
   /* Form to search an accomodation */
