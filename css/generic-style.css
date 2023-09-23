@@ -8,6 +8,12 @@
   background-color: white;
   border-radius: var(--card-border-radius);
   filter: drop-shadow(0 0.3rem 1.5rem rgba(0, 0, 0, 0.1));
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: var(--transition);
 }
 
 .card img {
