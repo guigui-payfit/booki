@@ -51,26 +51,26 @@
           <input class="bigger-text" type="search" value="Marseille, France" />
           <button class="bigger-text" id="search-button" type="submit">
             <span>Rechercher</span>
-            <i class="fa-magnifying-glass fa-solid"></i>
+            <i class="fa-magnifying-glass fa-solid" title="Rechercher"></i>
           </button>
         </div>
         <div id="filters">
           <p class="bigger-text">Filtres</p>
           <div class="d-flex-row-wrap" id="filter-buttons">
             <button class="filter-button">
-              <i class="fa-solid fa-money-bill-wave"></i>
+              <i aria-hidden="true" class="fa-solid fa-money-bill-wave"></i>
               Économique
             </button>
             <button class="filter-button">
-              <i class="fa-solid fa-person"></i>
+              <i aria-hidden="true" class="fa-solid fa-person"></i>
               Familial
             </button>
             <button class="filter-button">
-              <i class="fa-solid fa-heart"></i>
+              <i aria-hidden="true" class="fa-solid fa-heart"></i>
               Romantique
             </button>
             <button class="filter-button">
-              <i class="fa-solid fa-fire"></i>
+              <i aria-hidden="true" class="fa-solid fa-fire"></i>
               Nos pépites
             </button>
           </div>
@@ -80,8 +80,15 @@
             class="d-flex-row flex-align-items-center flex-justify-content-center"
             id="icon-circle"
           >
-            <i class="fa-info fa-solid"></i>
+            <i
+              aria-hidden="true"
+              class="fa-info fa-solid"
+              title="Information sur le résultat de la recherche"
+            ></i>
           </div>
+          <span class="sr-only"
+            >Information sur le résultat de la recherche :
+          </span>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
       </form>
