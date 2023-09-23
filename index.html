@@ -20,11 +20,11 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="d-flex-column">
-    <header>
-      <a href="index.html"
+    <header role="banner">
+      <a aria-label="Booki" href="index.html"
         ><img src="images/logo/Booki.png" alt="Logo du site Booki"
       /></a>
-      <nav>
+      <nav aria-label="main navigation" role="navigation">
         <ul class="d-flex-row flex-justify-content-space-between">
           <li><a href="#accomodations">Hébergements</a></li>
           <li><a href="#activities">Activités</a></li>
@@ -32,7 +32,7 @@
       </nav>
     </header>
     <main class="d-flex-column">
-      <form action="" id="search-accomodation-form" method="get">
+      <form action="" id="search-accomodation-form" method="get" role="search">
         <div>
           <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
           <p>En plein centre-ville ou en pleine nature</p>
@@ -390,29 +390,25 @@
         </div>
       </section>
     </main>
-    <footer>
-      <section>
-        <p class="bigger-text">À propos</p>
+    <footer role="contentinfo">
+      <nav aria-label="footer navigation">
         <ul>
+          <p class="bigger-text">À propos</p>
           <li><a href="#">Fonctionnement du site</a></li>
           <li><a href="#">Conditions générales</a></li>
           <li><a href="#">Données et confidentialité</a></li>
         </ul>
-      </section>
-      <section>
-        <p class="bigger-text">Nos hébergements</p>
         <ul>
+          <p class="bigger-text">Nos hébergements</p>
           <li><a href="#">Charte qualité</a></li>
           <li><a href="#">Proposer votre hôtel</a></li>
         </ul>
-      </section>
-      <section>
-        <p class="bigger-text">Assistance</p>
         <ul>
+          <p class="bigger-text">Assistance</p>
           <li><a href="#">Centre d'aide</a></li>
           <li><a href="#">Nous contacter</a></li>
         </ul>
-      </section>
+      </nav>
     </footer>
   </body>
 </html>

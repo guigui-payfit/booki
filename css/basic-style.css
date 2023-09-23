@@ -25,6 +25,9 @@ button {
 
 footer {
   background-color: var(--section-background);
+}
+
+footer > nav {
   display: flex;
 }
 
@@ -65,12 +68,12 @@ ul {
     padding: 0;
   }
 
-  footer {
+  footer > nav {
     flex-direction: column;
     padding: 3rem;
   }
 
-  footer > *:not(:last-child) {
+  footer > nav > *:not(:last-child) {
     margin-bottom: 5rem;
   }
 

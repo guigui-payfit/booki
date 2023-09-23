@@ -251,16 +251,16 @@ header nav a {
 }
 
 /* Footer */
-footer > section {
+footer li:not(:last-child),
+footer p {
+  margin-bottom: 1.5rem;
+}
+
+footer ul {
   display: flex;
   flex: 1;
   flex-direction: column;
   padding: 2rem;
-}
-
-footer > section li:not(:last-child),
-footer > section p {
-  margin-bottom: 1.5rem;
 }
 
 /* Styles on medium (tablets) and large devices (computers) */
@@ -450,7 +450,7 @@ footer > section p {
   }
 
   /* Footer */
-  footer > section {
+  footer ul {
     padding: 0;
   }
 }
