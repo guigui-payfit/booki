@@ -11,3 +11,7 @@ The tab to be opened URL is by default : http://localhost:5500/.
 - [Website mock-ups on Figma](<https://www.figma.com/file/r9YJyUkpVdrxzBBKGH7reY/Maquettes-Booki-(desktop%2C-mobile%2C-tablette)?type=design&node-id=118365-18052&mode=design&t=4kcKb3ttMJf4DWIp-0>)
 - [Functional and technical specifications](https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/DW_P2+HTML+CSS+Booki/DW+Booki+-+Note+de+synthese.pdf)
 - [Step-by-step guide](https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/DW_P2+HTML+CSS+Booki/DW+Booki+-+Etapes+cles.pdf)
+
+## W3C validators
+
+- After modiying a HTML file, don't forget to validate it on the [W3C HTML validator](https://validator.w3.org/nu/#file).

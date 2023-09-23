@@ -31,6 +31,10 @@ footer nav {
   display: flex;
 }
 
+footer nav > * {
+  flex: 1;
+}
+
 footer nav a:hover,
 header nav a:hover {
   color: var(--primary);
@@ -74,12 +78,12 @@ ul {
     padding: 0;
   }
 
-  footer > nav {
+  footer nav {
     flex-direction: column;
     padding: 3rem;
   }
 
-  footer > nav > *:not(:last-child) {
+  footer nav > *:not(:last-child) {
     margin-bottom: 5rem;
   }
 
