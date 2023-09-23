@@ -15,3 +15,4 @@ The tab to be opened URL is by default : http://localhost:5500/.
 ## W3C validators
 
 - After modiying a HTML file, don't forget to validate it on the [W3C HTML validator](https://validator.w3.org/nu/#file).
+- After modifying a CSS file, don't forget to validate it on the [W3C CSS validator](https://jigsaw.w3.org/css-validator/#validate_by_upload).
