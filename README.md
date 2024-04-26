@@ -4,7 +4,8 @@ This is the second project (P2) of the OpenClassrooms web developer training.
 Booki is a vacation accommodation website. The website is static and responsive.
 
 Booki website can be seen on your web browser by opening the "index.html" file with the "Live Server" extension from your VSCode editor.
-The tab to be opened URL is by default : http://localhost:5500/.
+The tab to be opened URL is by default: http://localhost:5500/.
+You can also visit the staging website at the following URL: https://guigui-payfit.github.io/booki/.
 
 ## External links
 
